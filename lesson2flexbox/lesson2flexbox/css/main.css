@@ -94,38 +94,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face
+{
+font-family: gameofthrones;
+src: url('../fonts/gameofthrones.otf') format('opentype');
+}
 
 
 html {
-  background-color: black;
+  background-color: #2F4454;
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: .5em;
   font-size: 1em;
   height: 100%;
 }
-
-.wrapper, .header{
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  border: grey 3px solid;
-  height: auto;
+ 
+footer, 
+main {
+  border: #2E151B 1px dashed;
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+header{
+  font-family: 'gameofthrones';
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-content: flex-start;
+}
+
+.flex-container{
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-1,
+.div-2{
+  border-right: #2E151B 1px dashed;
+}
+
+ .div-1, .div-2, .div-3 {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: wrap;
   width: 30%;
 
 }
